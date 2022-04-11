@@ -1,0 +1,284 @@
+/*===========================RESET USTAWIEŃ PRZEGLĄDARKI=======================*/
+    *{
+        user-select: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+    html{
+        font-size: .625em;
+        font-family: 'Roboto', sans-serif;
+}
+/*===========================RESET USTAWIEŃ PRZEGLĄDARKI=======================*/
+
+
+
+/*===============================USTAWIENIA HEADERA============================*/
+
+
+/*--------------1---------------USTAWIENIA HEADERA LOGO I NAWIGACJI------------------------*/
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(12,29,65);
+        background: linear-gradient(90deg, rgba(12,29,65,1) 0%, rgba(4,13,33,1) 87%, rgba(4,13,33,1) 100%);
+        font-family: Roboto, sans-serif;
+        font-size: 1.3em;
+        padding: 3px 0 0 0;
+        height: 50px;
+        position: sticky;
+        top: 0;
+    }
+/*---------------1--------------USTAWIENIA HEADERA LOGO I NAWIGACJI------------------------*/
+
+
+/*----------------2-------------USTAWIENIA NAWIGACJI------------------------*/
+    header ul{
+        display: flex;
+        list-style-type: none;
+    }
+
+    header ul li{
+        padding: 10px 10px 10px 10px;
+    }
+
+    header ul li a {
+        text-decoration: none;
+        color: #ffffff
+    }
+
+header ul li a:hover {
+    opacity: 0.8;
+    color: #1e86ed;
+}
+
+nav{
+    font-weight: bold;
+}
+
+
+/*----------------2-------------USTAWIENIA NAWIGACJI------------------------*/
+
+
+
+/*----------------3-------------UKRYCIE CHECKBOX I BURGERA------------------------*/
+    label, #burger{
+        display: none;
+    }
+/*----------------3-------------UKRYCIE CHECKBOX I BURGERA------------------------*/
+
+
+/*===============================USTAWIENIA HEADERA============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================SECTION SLODKIEWICZ, PIC.============================*/
+
+
+/*-----------------------------GŁÓWNY KONTENER------------------------*/
+
+.section_home{
+    width: 100%;
+    margin: auto;
+    background: rgb(12,29,65);
+    background: linear-gradient(90deg, rgba(12,29,65,1) 0%, rgba(4,13,33,1) 87%, rgba(4,13,33,1) 100%);
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.article_left, .article_right{
+    width: 50%;
+}
+/*-----------------------------GŁÓWNY KONTENER------------------------*/
+
+/*-----------------------------LEWA STRONA IMIE NAZWISKO WYŚLIJ WIADOMOŚĆ------------------------*/
+
+
+
+.article_left h1{
+    font-size: 5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    margin-left: 20%;
+    transition: font-size .5s ease-in-out;
+}
+
+.article_left h2{
+    font-size: 4em;
+    font-weight: bold;
+    color: #1e86ed;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20%;
+    position: relative;
+    bottom: 30px;
+    transition: font-size .5s ease-in-out;
+}
+.article_left p{
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-left: 20%;
+    text-align: start;
+    position: relative;
+    bottom: 20px;
+}
+
+.mailto{
+    text-decoration: none;
+    color: white;
+    background:#2ea550 ;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.375rem;
+}
+.mailto:hover {
+    cursor: pointer;
+}
+
+/*-----------------------------LEWA STRONA IMIE NAZWISKO WYŚLIJ WIADOMOŚĆ------------------------*/
+
+
+
+
+/*-----------------------------PRAWA STRONA ZDJĘCIE TYPA------------------------*/
+
+.article_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.art{
+    position: relative;
+    right: 150px;
+    padding: 50px;
+    z-index: 0;
+}
+/*-----------------------------PRAWA STRONA ZDJĘCIE TYPA------------------------*/
+
+
+
+/*===============================SECTION SLODKIEWICZ, PIC============================*/
+
+
+
+
+/*===============================USTAWIENIA HEADERA @MEDIA============================*/
+
+@media screen and (max-width: 768px) {
+        header {
+            justify-content: space-between;
+        }
+
+        nav {
+            display: none
+        }
+
+        nav {
+            background: rgb(12, 29, 65);
+            background: linear-gradient(90deg, rgba(12, 29, 65, 1) 0%, rgba(4, 13, 33, 1) 87%, rgba(4, 13, 33, 1) 100%);
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-right: 20px;
+        }
+
+        label:hover {
+            cursor: pointer;
+            opacity: 0.8;
+            transform: rotate(360deg);
+            transition-duration: .8s;
+        }
+
+        .logo_header {
+            margin-left: 20px;
+        }
+
+        #burger:checked ~ nav {
+            display: block;
+            position: absolute;
+            top: 50px;
+            width: 100%;
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        li {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+/*===============================USTAWIENIA HEADERA @MEDIA============================*/
+
+
+/*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
+
+
+@media screen and (max-width: 768px) {
+    .section_home {
+        padding-top: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .article_left{
+        width: 100%;
+    }
+
+    .article_left h1{
+        font-size: 3em;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+    .article_left h2{
+        font-size: 2.2em;
+        position: static;
+        text-align: center;
+        margin: -15px 0 0 0;
+        padding-bottom: 10px;
+    }
+    .article_left p{
+        text-align: center;
+        margin: 7px 0 0 0;
+        font-size: 1.2em;
+        padding: 0 10px 0 10px;
+        position: static;
+    }
+    .article_right{
+        width: 100%;
+        display: flex;
+    }
+    .art{
+        position: relative;
+        right: 0;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+}
+/*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
